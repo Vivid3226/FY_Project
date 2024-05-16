@@ -34,6 +34,22 @@ int main() {
 
     // Display choices
     cout << "You chose: " << choices[playerChoice] << endl;
+    cout<<"Computer Chose"<<choice[computerChoice]<<endl;
+
+    if(playerchoice==computerchoice){
+    cout<<"Ohh !! It's Tie :) !!\n";
+    }
+    else if ((playerChoice == 0 && computerChoice == 2) ||
+               (playerChoice == 1 && computerChoice == 0) ||
+               (playerChoice == 2 && computerChoice == 1))
+    cout<<"You Win!!\n";
+    else{
+    cout<<"Computer Wins !!\n";
+    }
+    return 0;
+    }
+    
+    
 
 
 
